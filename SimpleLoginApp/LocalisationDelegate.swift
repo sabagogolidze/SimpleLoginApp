@@ -1,0 +1,3 @@
+protocol LocalizationDelegate {
+    func localizeSelf()
+}

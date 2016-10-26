@@ -12,10 +12,24 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var bundle: Bundle?
+    
+    var language: Language = AppUtils.getUserDefaultLanguage() {
+        didSet {
+            if let path = Bundle.main.path(forResource: language.rawValue, ofType: "lproj") {
+                bundle = Bundle(path: path)
+            }
+        }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if let path = Bundle.main.path(forResource: language.rawValue, ofType: "lproj") {
+            bundle = Bundle(path: path)
+        }
+        
         return true
     }
 

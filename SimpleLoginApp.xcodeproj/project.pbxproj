@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047E89CA1DC0B1E7000BACEC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 047E89CC1DC0B1E7000BACEC /* Localizable.strings */; };
+		047E89D11DC0B294000BACEC /* LocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89D01DC0B294000BACEC /* LocalizedLabel.swift */; };
+		047E89D41DC0B3D8000BACEC /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89D31DC0B3D8000BACEC /* AppUtils.swift */; };
+		047E89D61DC0B4C7000BACEC /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89D51DC0B4C7000BACEC /* Language.swift */; };
+		047E89D81DC0B7BE000BACEC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89D71DC0B7BE000BACEC /* Extensions.swift */; };
+		047E89DA1DC0BD25000BACEC /* LocalizedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89D91DC0BD25000BACEC /* LocalizedTextField.swift */; };
+		047E89DC1DC0BE62000BACEC /* ValidateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89DB1DC0BE62000BACEC /* ValidateTextField.swift */; };
+		047E89DE1DC0C0CE000BACEC /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89DD1DC0C0CE000BACEC /* ColorTheme.swift */; };
+		047E89E01DC0D28E000BACEC /* LocalisationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89DF1DC0D28E000BACEC /* LocalisationDelegate.swift */; };
+		047E89E21DC0D54E000BACEC /* LocalizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89E11DC0D54E000BACEC /* LocalizedButton.swift */; };
 		04C9FAA21DBF5685005C74EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9FAA11DBF5685005C74EA /* AppDelegate.swift */; };
 		04C9FAA71DBF5685005C74EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C9FAA51DBF5685005C74EA /* Main.storyboard */; };
 		04C9FAA91DBF5685005C74EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C9FAA81DBF5685005C74EA /* Assets.xcassets */; };
@@ -17,6 +27,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047E89CB1DC0B1E7000BACEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		047E89CE1DC0B1F1000BACEC /* ka */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ka; path = ka.lproj/Localizable.strings; sourceTree = "<group>"; };
+		047E89D01DC0B294000BACEC /* LocalizedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedLabel.swift; sourceTree = "<group>"; };
+		047E89D31DC0B3D8000BACEC /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		047E89D51DC0B4C7000BACEC /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		047E89D71DC0B7BE000BACEC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		047E89D91DC0BD25000BACEC /* LocalizedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedTextField.swift; sourceTree = "<group>"; };
+		047E89DB1DC0BE62000BACEC /* ValidateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateTextField.swift; sourceTree = "<group>"; };
+		047E89DD1DC0C0CE000BACEC /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		047E89DF1DC0D28E000BACEC /* LocalisationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalisationDelegate.swift; sourceTree = "<group>"; };
+		047E89E11DC0D54E000BACEC /* LocalizedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedButton.swift; sourceTree = "<group>"; };
 		04C9FA9E1DBF5685005C74EA /* SimpleLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C9FAA11DBF5685005C74EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C9FAA61DBF5685005C74EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +60,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047E89CF1DC0B26F000BACEC /* Custom views */ = {
+			isa = PBXGroup;
+			children = (
+				047E89D01DC0B294000BACEC /* LocalizedLabel.swift */,
+				047E89D91DC0BD25000BACEC /* LocalizedTextField.swift */,
+				047E89DB1DC0BE62000BACEC /* ValidateTextField.swift */,
+				047E89DF1DC0D28E000BACEC /* LocalisationDelegate.swift */,
+				047E89E11DC0D54E000BACEC /* LocalizedButton.swift */,
+			);
+			name = "Custom views";
+			sourceTree = "<group>";
+		};
+		047E89D21DC0B3CB000BACEC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				047E89D31DC0B3D8000BACEC /* AppUtils.swift */,
+				047E89D51DC0B4C7000BACEC /* Language.swift */,
+				047E89D71DC0B7BE000BACEC /* Extensions.swift */,
+				047E89DD1DC0C0CE000BACEC /* ColorTheme.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		04C9FA951DBF5685005C74EA = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +102,15 @@
 		04C9FAA01DBF5685005C74EA /* SimpleLoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				047E89D21DC0B3CB000BACEC /* Utils */,
+				047E89CF1DC0B26F000BACEC /* Custom views */,
 				04C9FAB31DBF56FB005C74EA /* ViewControllers */,
 				04C9FAA11DBF5685005C74EA /* AppDelegate.swift */,
 				04C9FAA51DBF5685005C74EA /* Main.storyboard */,
 				04C9FAA81DBF5685005C74EA /* Assets.xcassets */,
 				04C9FAAA1DBF5685005C74EA /* LaunchScreen.storyboard */,
 				04C9FAAD1DBF5685005C74EA /* Info.plist */,
+				047E89CC1DC0B1E7000BACEC /* Localizable.strings */,
 			);
 			path = SimpleLoginApp;
 			sourceTree = "<group>";
@@ -121,6 +168,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ka,
 			);
 			mainGroup = 04C9FA951DBF5685005C74EA;
 			productRefGroup = 04C9FA9F1DBF5685005C74EA /* Products */;
@@ -138,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C9FAAC1DBF5685005C74EA /* LaunchScreen.storyboard in Resources */,
+				047E89CA1DC0B1E7000BACEC /* Localizable.strings in Resources */,
 				04C9FAA91DBF5685005C74EA /* Assets.xcassets in Resources */,
 				04C9FAA71DBF5685005C74EA /* Main.storyboard in Resources */,
 			);
@@ -152,14 +201,32 @@
 			files = (
 				04C9FAB51DBF572C005C74EA /* LoginViewController.swift in Sources */,
 				04C9FAA21DBF5685005C74EA /* AppDelegate.swift in Sources */,
+				047E89E21DC0D54E000BACEC /* LocalizedButton.swift in Sources */,
+				047E89E01DC0D28E000BACEC /* LocalisationDelegate.swift in Sources */,
 				04C9FAB91DBF5BBE005C74EA /* FormViewController.swift in Sources */,
+				047E89DC1DC0BE62000BACEC /* ValidateTextField.swift in Sources */,
+				047E89D81DC0B7BE000BACEC /* Extensions.swift in Sources */,
+				047E89D61DC0B4C7000BACEC /* Language.swift in Sources */,
+				047E89D41DC0B3D8000BACEC /* AppUtils.swift in Sources */,
 				04C9FAB71DBF5B75005C74EA /* BaseViewController.swift in Sources */,
+				047E89DA1DC0BD25000BACEC /* LocalizedTextField.swift in Sources */,
+				047E89DE1DC0C0CE000BACEC /* ColorTheme.swift in Sources */,
+				047E89D11DC0B294000BACEC /* LocalizedLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		047E89CC1DC0B1E7000BACEC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047E89CB1DC0B1E7000BACEC /* en */,
+				047E89CE1DC0B1F1000BACEC /* ka */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		04C9FAA51DBF5685005C74EA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -183,6 +250,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -232,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -313,6 +382,7 @@
 				04C9FAB21DBF5685005C74EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

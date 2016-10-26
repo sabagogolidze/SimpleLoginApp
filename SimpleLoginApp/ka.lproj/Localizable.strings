@@ -1,0 +1,7 @@
+// Login
+"Login" = "შესვლა";
+"Username" = "სახელი";
+"Password" = "პაროლი";
+
+// Validation
+"Please fill in" = "მიუთითეთ %@";

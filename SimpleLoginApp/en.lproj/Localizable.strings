@@ -1,0 +1,7 @@
+// Login
+"Login" = "Login";
+"Username" = "username";
+"Password" = "password";
+
+// Validation
+"Please fill in" = "Fill the %@ field";
