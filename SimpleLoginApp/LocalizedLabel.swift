@@ -1,6 +1,6 @@
 import UIKit
 
-class LocalizedLabel: UILabel, LocalizationDelegate{
+class LocalizedLabel: UILabel, TranslatableView{
     
     var localisedKey: String?
     

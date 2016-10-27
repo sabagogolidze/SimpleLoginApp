@@ -32,8 +32,8 @@ class AppUtils {
                 AppUtils.translateLocalisedViewsRecursively(view: v)
             }
             
-            if let localizedView = v as? LocalizationDelegate {
-                localizedView.localizeSelf()
+            if let translatableView = v as? TranslatableView {
+                translatableView.localizeSelf()
             }
             
         }

@@ -2,6 +2,9 @@ import UIKit
 
 class LoginViewController: FormViewController {
     
+    let LOGIN_ERROR_PREFIX = "LOGIN_ERROR_"
+    
+    
     @IBOutlet weak var userNameTF: ValidateTextField!
     @IBOutlet weak var passwordTF: ValidateTextField!
     
@@ -15,6 +18,14 @@ class LoginViewController: FormViewController {
         underlineLanguage(lang: AppUtils.getUserDefaultLanguage())
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -24,17 +35,33 @@ class LoginViewController: FormViewController {
         if(!validateInputs()){
             return
         }
-        
+        startLoading()
         AppUtils.service().login(username: userNameTF.text!, password: passwordTF.text!, success: successOnLogin, fail: errorOnLogin)
         
     }
     
     func successOnLogin(res: Response<LoginResponseContent>){
-        
+        stopLoading()
+        emptyFields()
+        self.performSegue(withIdentifier: "loginSegue", sender: self)
     }
     
     func errorOnLogin(error: ServiceError){
-        
+        stopLoading()
+        if let code = error.errorCode {
+            let errorLocalizedKey = LOGIN_ERROR_PREFIX + "\(code)"
+            print(errorLocalizedKey)
+            if !(errorLocalizedKey.localized ==  errorLocalizedKey) {
+                showOkDialog(title: "", text: errorLocalizedKey.localized)
+                return
+            }
+        }
+        showDefaultError()
+    }
+    
+    func emptyFields(){
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
     
     func validateInputs() -> Bool {
@@ -63,7 +90,7 @@ class LoginViewController: FormViewController {
         AppUtils.setLanguage(lang: lang)
         UserDefaults().set(lang.rawValue, forKey: AppUtils.KEY_FOR_SAVING_LANGUAGE)
         AppUtils.translateLocalisedViewsRecursively(view: self.view)
-        underlineLanguage(lang: .Eng)
+        underlineLanguage(lang: lang)
     }
     
     func underlineLanguage(lang: Language) {
@@ -75,6 +102,8 @@ class LoginViewController: FormViewController {
             georgianUnderlineView.backgroundColor = UIColor.white
         }
     }
+    
+  
     
     
 }

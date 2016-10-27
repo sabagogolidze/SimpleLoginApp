@@ -2,6 +2,10 @@
 "Login" = "Login";
 "Username" = "username";
 "Password" = "password";
+"LOGIN_ERROR_404" = "username not found";
+"LOGIN_ERROR_405" = "incorrect password";
+"DEFAULT_ERROR" = "error";
+"successfull login" = "Successfull login";
 
 // Validation
 "Please fill in" = "Fill the %@ field";

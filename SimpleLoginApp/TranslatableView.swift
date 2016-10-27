@@ -1,0 +1,3 @@
+protocol TranslatableView {
+    func localizeSelf()
+}

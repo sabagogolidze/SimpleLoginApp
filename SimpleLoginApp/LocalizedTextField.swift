@@ -1,6 +1,6 @@
 import UIKit
 
-class LocalizedTextField: UITextField, LocalizationDelegate {
+class LocalizedTextField: UITextField, TranslatableView {
     
     @IBInspectable var hintKey: String? {
         didSet {

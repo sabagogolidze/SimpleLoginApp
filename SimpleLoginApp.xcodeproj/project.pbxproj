@@ -26,7 +26,6 @@
 		047E89DA1DC0BD25000BACEC /* LocalizedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89D91DC0BD25000BACEC /* LocalizedTextField.swift */; };
 		047E89DC1DC0BE62000BACEC /* ValidateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89DB1DC0BE62000BACEC /* ValidateTextField.swift */; };
 		047E89DE1DC0C0CE000BACEC /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89DD1DC0C0CE000BACEC /* ColorTheme.swift */; };
-		047E89E01DC0D28E000BACEC /* LocalisationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89DF1DC0D28E000BACEC /* LocalisationDelegate.swift */; };
 		047E89E21DC0D54E000BACEC /* LocalizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89E11DC0D54E000BACEC /* LocalizedButton.swift */; };
 		04C9FAA21DBF5685005C74EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9FAA11DBF5685005C74EA /* AppDelegate.swift */; };
 		04C9FAA71DBF5685005C74EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C9FAA51DBF5685005C74EA /* Main.storyboard */; };
@@ -35,6 +34,8 @@
 		04C9FAB51DBF572C005C74EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9FAB41DBF572C005C74EA /* LoginViewController.swift */; };
 		04C9FAB71DBF5B75005C74EA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9FAB61DBF5B75005C74EA /* BaseViewController.swift */; };
 		04C9FAB91DBF5BBE005C74EA /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9FAB81DBF5BBE005C74EA /* FormViewController.swift */; };
+		04F100341DC2262C007BCC22 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F100331DC2262C007BCC22 /* DetailedViewController.swift */; };
+		04F100361DC2427B007BCC22 /* TranslatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F100351DC2427B007BCC22 /* TranslatableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +59,6 @@
 		047E89D91DC0BD25000BACEC /* LocalizedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedTextField.swift; sourceTree = "<group>"; };
 		047E89DB1DC0BE62000BACEC /* ValidateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateTextField.swift; sourceTree = "<group>"; };
 		047E89DD1DC0C0CE000BACEC /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
-		047E89DF1DC0D28E000BACEC /* LocalisationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalisationDelegate.swift; sourceTree = "<group>"; };
 		047E89E11DC0D54E000BACEC /* LocalizedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedButton.swift; sourceTree = "<group>"; };
 		04C9FA9E1DBF5685005C74EA /* SimpleLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C9FAA11DBF5685005C74EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +69,8 @@
 		04C9FAB41DBF572C005C74EA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04C9FAB61DBF5B75005C74EA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		04C9FAB81DBF5BBE005C74EA /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		04F100331DC2262C007BCC22 /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		04F100351DC2427B007BCC22 /* TranslatableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +132,8 @@
 				047E89D01DC0B294000BACEC /* LocalizedLabel.swift */,
 				047E89D91DC0BD25000BACEC /* LocalizedTextField.swift */,
 				047E89DB1DC0BE62000BACEC /* ValidateTextField.swift */,
-				047E89DF1DC0D28E000BACEC /* LocalisationDelegate.swift */,
 				047E89E11DC0D54E000BACEC /* LocalizedButton.swift */,
+				04F100351DC2427B007BCC22 /* TranslatableView.swift */,
 			);
 			name = "Custom views";
 			sourceTree = "<group>";
@@ -186,6 +188,7 @@
 				04C9FAB41DBF572C005C74EA /* LoginViewController.swift */,
 				04C9FAB61DBF5B75005C74EA /* BaseViewController.swift */,
 				04C9FAB81DBF5BBE005C74EA /* FormViewController.swift */,
+				04F100331DC2262C007BCC22 /* DetailedViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -270,17 +273,18 @@
 				047E89E21DC0D54E000BACEC /* LocalizedButton.swift in Sources */,
 				045EA26A1DC21A7800448CB6 /* SipmpleLoginAppService.swift in Sources */,
 				045EA2501DC20FE600448CB6 /* AppTransport.swift in Sources */,
-				047E89E01DC0D28E000BACEC /* LocalisationDelegate.swift in Sources */,
 				045EA2681DC2170E00448CB6 /* LoginRequestBuilder.swift in Sources */,
 				04C9FAB91DBF5BBE005C74EA /* FormViewController.swift in Sources */,
 				045EA2661DC2166E00448CB6 /* RequestBuilder.swift in Sources */,
 				047E89DC1DC0BE62000BACEC /* ValidateTextField.swift in Sources */,
 				045EA2521DC2104600448CB6 /* Request.swift in Sources */,
 				045EA2581DC2139800448CB6 /* DummyAppTransport.swift in Sources */,
+				04F100361DC2427B007BCC22 /* TranslatableView.swift in Sources */,
 				045EA2561DC2112900448CB6 /* ServiceError.swift in Sources */,
 				045EA2541DC2110D00448CB6 /* Response.swift in Sources */,
 				047E89D81DC0B7BE000BACEC /* Extensions.swift in Sources */,
 				047E89D61DC0B4C7000BACEC /* Language.swift in Sources */,
+				04F100341DC2262C007BCC22 /* DetailedViewController.swift in Sources */,
 				047E89D41DC0B3D8000BACEC /* AppUtils.swift in Sources */,
 				04C9FAB71DBF5B75005C74EA /* BaseViewController.swift in Sources */,
 				045EA2631DC2151400448CB6 /* AppService.swift in Sources */,

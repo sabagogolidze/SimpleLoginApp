@@ -1,7 +1,11 @@
+import Foundation
+
+// //THis method is dumm, do not judge :(
 class DummyAppTransport: AppTransport{
     
     func execute<ContentType>(request: Request, success: (Response<ContentType>) -> Void, fail: ((ServiceError) -> Void)) {
         //THis method is dumm, do not judge :(
+        
         if(ContentType.self == LoginResponseContent.self) {
             if( request.params["username"] == "david" && request.params["password"] == "123" ){
                 let content = LoginResponseContent()
@@ -12,7 +16,12 @@ class DummyAppTransport: AppTransport{
                 success(res)
             } else {
                 let error = ServiceError()
-                error.errorCode = 404
+                if( request.params["username"] == "david" ) {
+                    error.errorCode = 405
+                } else {
+                    error.errorCode = 404
+                }
+                
                 fail(error)
             }
         } else {

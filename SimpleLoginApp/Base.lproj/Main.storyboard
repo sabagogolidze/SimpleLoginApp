@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3o2-EG-dWC">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -7,6 +7,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3M2-RW-xUS">
+            <objects>
+                <navigationController id="3o2-EG-dWC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jnq-fo-TRI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4e1-jJ-ujK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xoB-qg-yUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-735" y="103"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -27,7 +43,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="hintKey" value="Username"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="validateText" value="Username"/>
@@ -146,11 +162,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Res-y7-8HF" secondAttribute="bottom" constant="20" id="lTH-Bk-pKI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="i6t-qx-FOO"/>
                     <connections>
                         <outlet property="englishUnderlineView" destination="isI-LI-v6l" id="gGU-4F-fR8"/>
                         <outlet property="georgianUnderlineView" destination="Sw2-K3-gAT" id="jrd-lW-pD1"/>
                         <outlet property="passwordTF" destination="FHS-re-1p5" id="zM6-2T-qbH"/>
                         <outlet property="userNameTF" destination="TFe-3u-fFv" id="NU2-hX-JQN"/>
+                        <segue destination="2B4-yR-OAA" kind="show" identifier="loginSegue" id="l1k-ly-Emh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -165,6 +183,52 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="143" y="103"/>
+        </scene>
+        <!--Detailed View Controller-->
+        <scene sceneID="rxS-oY-p3h">
+            <objects>
+                <viewController id="2B4-yR-OAA" customClass="DetailedViewController" customModule="SimpleLoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vnm-yY-Ozf"/>
+                        <viewControllerLayoutGuide type="bottom" id="qjY-jZ-Po6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X2h-Hj-IJH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oQ0-Ys-EjP">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="Ki3-sd-zDR">
+                                        <barButtonItem key="backBarButtonItem" title="Back" id="TJP-wb-fxv"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="successfull login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wq-Yi-vdh" customClass="LocalizedLabel" customModule="SimpleLoginApp" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7iJ-A6-Tyh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="key" value="successfull login"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Wq-Yi-vdh" secondAttribute="trailing" constant="36" id="U5R-A1-6Nd"/>
+                            <constraint firstItem="0Wq-Yi-vdh" firstAttribute="centerY" secondItem="X2h-Hj-IJH" secondAttribute="centerY" id="Wjj-NC-5GG"/>
+                            <constraint firstItem="0Wq-Yi-vdh" firstAttribute="leading" secondItem="X2h-Hj-IJH" secondAttribute="leadingMargin" constant="36" id="ofH-rH-Eeq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSL-Y0-Hr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="103"/>
         </scene>
     </scenes>
 </document>

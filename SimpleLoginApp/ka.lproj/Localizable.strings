@@ -2,6 +2,11 @@
 "Login" = "შესვლა";
 "Username" = "სახელი";
 "Password" = "პაროლი";
+"LOGIN_ERROR_404" = "მომხმარებელი ვერ მოიძებნა";
+"LOGIN_ERROR_405" = "არაწორი პაროლი";
+"DEFAULT_ERROR" = " მოხდა შეცდომა";
+"successfull login" = "თქვენ წარმატებით გაიარეთ ავტორიზაცია";
+
 
 // Validation
 "Please fill in" = "მიუთითეთ %@";

@@ -1,6 +1,6 @@
 import UIKit
 
-class LocalizedButton: UIButton, LocalizationDelegate{
+class LocalizedButton: UIButton, TranslatableView{
     
     var localisedKey: String?
     
