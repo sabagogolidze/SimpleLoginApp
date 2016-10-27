@@ -1,3 +1,0 @@
-class LoginRequest: Request {
-    
-}
