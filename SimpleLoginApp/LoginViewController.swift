@@ -50,7 +50,6 @@ class LoginViewController: FormViewController {
         stopLoading()
         if let code = error.errorCode {
             let errorLocalizedKey = LOGIN_ERROR_PREFIX + "\(code)"
-            print(errorLocalizedKey)
             if !(errorLocalizedKey.localized ==  errorLocalizedKey) {
                 showOkDialog(title: "", text: errorLocalizedKey.localized)
                 return
