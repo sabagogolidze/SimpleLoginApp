@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var bundle: Bundle?
+    var appService:AppService = SimpleLoginAppService()
     
     var language: Language = AppUtils.getUserDefaultLanguage() {
         didSet {

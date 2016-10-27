@@ -5,6 +5,10 @@ class AppUtils {
     
     static let KEY_FOR_SAVING_LANGUAGE = "language"
     
+    static func service() -> AppService {
+        return (UIApplication.shared.delegate as! AppDelegate).appService
+    }
+    
     static func bundle() -> Bundle? {
         return (UIApplication.shared.delegate as! AppDelegate).bundle
     }

@@ -25,7 +25,15 @@ class LoginViewController: FormViewController {
             return
         }
         
-        // TODO Login
+        AppUtils.service().login(username: userNameTF.text!, password: passwordTF.text!, success: successOnLogin, fail: errorOnLogin)
+        
+    }
+    
+    func successOnLogin(res: Response<LoginResponseContent>){
+        
+    }
+    
+    func errorOnLogin(error: ServiceError){
         
     }
     

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045EA2501DC20FE600448CB6 /* AppTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA24F1DC20FE600448CB6 /* AppTransport.swift */; };
+		045EA2521DC2104600448CB6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA2511DC2104600448CB6 /* Request.swift */; };
+		045EA2541DC2110D00448CB6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA2531DC2110D00448CB6 /* Response.swift */; };
+		045EA2561DC2112900448CB6 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA2551DC2112900448CB6 /* ServiceError.swift */; };
+		045EA2581DC2139800448CB6 /* DummyAppTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA2571DC2139800448CB6 /* DummyAppTransport.swift */; };
+		045EA25D1DC2140200448CB6 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA25C1DC2140200448CB6 /* LoginRequest.swift */; };
+		045EA2611DC2149A00448CB6 /* LoginResponseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA2601DC2149A00448CB6 /* LoginResponseContent.swift */; };
+		045EA2631DC2151400448CB6 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA2621DC2151400448CB6 /* AppService.swift */; };
+		045EA2661DC2166E00448CB6 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA2651DC2166E00448CB6 /* RequestBuilder.swift */; };
+		045EA2681DC2170E00448CB6 /* LoginRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA2671DC2170E00448CB6 /* LoginRequestBuilder.swift */; };
+		045EA26A1DC21A7800448CB6 /* SipmpleLoginAppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EA2691DC21A7800448CB6 /* SipmpleLoginAppService.swift */; };
 		047E89CA1DC0B1E7000BACEC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 047E89CC1DC0B1E7000BACEC /* Localizable.strings */; };
 		047E89D11DC0B294000BACEC /* LocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89D01DC0B294000BACEC /* LocalizedLabel.swift */; };
 		047E89D41DC0B3D8000BACEC /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E89D31DC0B3D8000BACEC /* AppUtils.swift */; };
@@ -27,6 +38,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045EA24F1DC20FE600448CB6 /* AppTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTransport.swift; sourceTree = "<group>"; };
+		045EA2511DC2104600448CB6 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		045EA2531DC2110D00448CB6 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		045EA2551DC2112900448CB6 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		045EA2571DC2139800448CB6 /* DummyAppTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyAppTransport.swift; sourceTree = "<group>"; };
+		045EA25C1DC2140200448CB6 /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		045EA2601DC2149A00448CB6 /* LoginResponseContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponseContent.swift; sourceTree = "<group>"; };
+		045EA2621DC2151400448CB6 /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		045EA2651DC2166E00448CB6 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		045EA2671DC2170E00448CB6 /* LoginRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequestBuilder.swift; sourceTree = "<group>"; };
+		045EA2691DC21A7800448CB6 /* SipmpleLoginAppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SipmpleLoginAppService.swift; sourceTree = "<group>"; };
 		047E89CB1DC0B1E7000BACEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		047E89CE1DC0B1F1000BACEC /* ka */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ka; path = ka.lproj/Localizable.strings; sourceTree = "<group>"; };
 		047E89D01DC0B294000BACEC /* LocalizedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedLabel.swift; sourceTree = "<group>"; };
@@ -60,6 +82,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045EA24E1DC20FBE00448CB6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				045EA2641DC215AA00448CB6 /* Builders */,
+				045EA25B1DC213F100448CB6 /* Responses */,
+				045EA25A1DC213EA00448CB6 /* Requests */,
+				045EA24F1DC20FE600448CB6 /* AppTransport.swift */,
+				045EA2511DC2104600448CB6 /* Request.swift */,
+				045EA2531DC2110D00448CB6 /* Response.swift */,
+				045EA2551DC2112900448CB6 /* ServiceError.swift */,
+				045EA2571DC2139800448CB6 /* DummyAppTransport.swift */,
+				045EA2621DC2151400448CB6 /* AppService.swift */,
+				045EA2691DC21A7800448CB6 /* SipmpleLoginAppService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		045EA25A1DC213EA00448CB6 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				045EA25C1DC2140200448CB6 /* LoginRequest.swift */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		045EA25B1DC213F100448CB6 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				045EA2601DC2149A00448CB6 /* LoginResponseContent.swift */,
+			);
+			name = Responses;
+			sourceTree = "<group>";
+		};
+		045EA2641DC215AA00448CB6 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				045EA2651DC2166E00448CB6 /* RequestBuilder.swift */,
+				045EA2671DC2170E00448CB6 /* LoginRequestBuilder.swift */,
+			);
+			name = Builders;
+			sourceTree = "<group>";
+		};
 		047E89CF1DC0B26F000BACEC /* Custom views */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +166,7 @@
 		04C9FAA01DBF5685005C74EA /* SimpleLoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				045EA24E1DC20FBE00448CB6 /* Service */,
 				047E89D21DC0B3CB000BACEC /* Utils */,
 				047E89CF1DC0B26F000BACEC /* Custom views */,
 				04C9FAB31DBF56FB005C74EA /* ViewControllers */,
@@ -201,14 +266,25 @@
 			files = (
 				04C9FAB51DBF572C005C74EA /* LoginViewController.swift in Sources */,
 				04C9FAA21DBF5685005C74EA /* AppDelegate.swift in Sources */,
+				045EA25D1DC2140200448CB6 /* LoginRequest.swift in Sources */,
 				047E89E21DC0D54E000BACEC /* LocalizedButton.swift in Sources */,
+				045EA26A1DC21A7800448CB6 /* SipmpleLoginAppService.swift in Sources */,
+				045EA2501DC20FE600448CB6 /* AppTransport.swift in Sources */,
 				047E89E01DC0D28E000BACEC /* LocalisationDelegate.swift in Sources */,
+				045EA2681DC2170E00448CB6 /* LoginRequestBuilder.swift in Sources */,
 				04C9FAB91DBF5BBE005C74EA /* FormViewController.swift in Sources */,
+				045EA2661DC2166E00448CB6 /* RequestBuilder.swift in Sources */,
 				047E89DC1DC0BE62000BACEC /* ValidateTextField.swift in Sources */,
+				045EA2521DC2104600448CB6 /* Request.swift in Sources */,
+				045EA2581DC2139800448CB6 /* DummyAppTransport.swift in Sources */,
+				045EA2561DC2112900448CB6 /* ServiceError.swift in Sources */,
+				045EA2541DC2110D00448CB6 /* Response.swift in Sources */,
 				047E89D81DC0B7BE000BACEC /* Extensions.swift in Sources */,
 				047E89D61DC0B4C7000BACEC /* Language.swift in Sources */,
 				047E89D41DC0B3D8000BACEC /* AppUtils.swift in Sources */,
 				04C9FAB71DBF5B75005C74EA /* BaseViewController.swift in Sources */,
+				045EA2631DC2151400448CB6 /* AppService.swift in Sources */,
+				045EA2611DC2149A00448CB6 /* LoginResponseContent.swift in Sources */,
 				047E89DA1DC0BD25000BACEC /* LocalizedTextField.swift in Sources */,
 				047E89DE1DC0C0CE000BACEC /* ColorTheme.swift in Sources */,
 				047E89D11DC0B294000BACEC /* LocalizedLabel.swift in Sources */,
